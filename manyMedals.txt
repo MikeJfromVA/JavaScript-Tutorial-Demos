@@ -1,0 +1,10 @@
+Australia	Swimming	Gold
+Australia	Swimming	Gold
+Australia	Archery	Bronze
+Hungary	Fencing	Gold
+Hungary	Swimming	Gold
+USA	Shooting	Gold
+USA	Swimming	Silver
+USA	Swimming	Silver
+USA	Swimming	Silver
+USA	Archery	Silver
