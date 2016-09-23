@@ -53,19 +53,21 @@ function closestSequence2(a, b) {
 	while(true) {
 		var digit = a.length - 1
 		while (digit >= 0) {
-			if (index[digit] >= b.length - a.length + digit + 1) {
+			if (index[digit] >= b.length - a.length + digit) {
 				// no more room, try another digit 
 				digit--
 			} else {
 				// digit moves forward
 				index[digit]++
 				// all digits to digit's right get reset
-				score[digit] = b[index[digit]]
+				score[digit] = abs(b[index[digit]] - a[digit])
 				for (reset=digit+1; reset<a.length; reset++) {
 		// OPTIMIZE THIS
 					index[reset] = index[reset-1]+1
-					score[reset] = b[index[reset]]
+					score[reset] =
+						abs(a[reset] - b[index[reset]])
 				}
+				break;
 			}
 		}
 		if (digit < 0) {
@@ -97,6 +99,7 @@ function closestSequence2(a, b) {
 
 console.log(closestSequence2([1, 2, 6], [-99, 0, 99, 1, 45, 3, 77, 4, 88, 5]))
 // should be 2
+// takes 122 abs() ops to solve without optimizing
 
 // console.log(closestSequence2([1, 2], [-99, 0, 99, 1, 45, 3, 77, 4, 88, 5]))
 // should be 1
