@@ -22,3 +22,5 @@ or rejected depending on the results.
         
 **medalOTM.js:** Demonstrates a functional pipeline with map/reduce. It requires ES2015 to run, and so you might want to check out [my blog post]( http://mikejfromva.com/2016/08/07/functional-javascript) on it.
 
+**heaps.js:** Heap's algorithm. Check out [my blog post](http://mikejfromva.com/2016/10/11/heaps-algorithm/ ) on it.
+
