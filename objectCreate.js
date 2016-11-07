@@ -5,6 +5,12 @@ If you don't watch his videos, you should!
 */
 
 const cat = {
+  // An init function, works as a constructor
+  init: function() {
+    this.sound = 'meow'
+    return this
+    // Now the init call can be chained to other method calls
+  }
   makeSound: function() {
     console.log(this.sound)
     /*
