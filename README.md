@@ -24,3 +24,4 @@ or rejected depending on the results.
 
 **heaps.js:** Heap's algorithm. Check out [my blog post](http://mikejfromva.com/2016/10/11/heaps-algorithm/ ) on it.
 
+**objectCreate.js** Explains object creation best practices in ECMASCRIPT 5,6.
